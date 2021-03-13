@@ -156,17 +156,60 @@
                 <label for="caracteristicas_4">Educacional</label><br>
                 <br><br>
 
-                <label for="range">Qual o seu grau de satisfação com o site em geral?</label><br>
-                <input type="range" id="pergunta7" min="0" max="100" form="Quizz"  name="rate" value="0" oninput="thisRate.value = rate.value">
-                <output name="thisRate" for="rate">0</output><span>%</span>
+                <label for="rate">Qual o seu grau de satisfação com o site em geral?</label><br>
+                <input type="range" min="0" max="100" id="pergunta7" name="pergunta7" value="0" oninput="pergunta7Rate.value = pergunta7.value">
+                <output name="pergunta7Rate" for="pergunta7"></output><span>%</span>
                 <br><br>
 
                 <label for="range">Deixe uma crítica construtiva ou inentivo:</label><br>
                 <textarea name="message" rows="10" cols="30" placeholder="My message..."></textarea>
                 <br><br>
+
+                <input type="hidden" id="hiddenQuestion" name="hiddenQuestion" value="Trata-se da opinião relativa ao website do laboratório 3">
                 
                 <input type="submit" value="Enviar">
             </fieldset>
+
+            <svg width="300" height="225">
+                <image href="img/wordcloud.jpg" width="300" height="225" alt="Kyoto"></image>
+                
+                <a href="index.html">
+                    <polygon opacity="0.3" points="0,0 300,0 300,225 0,225"></polygon>
+                </a>
+                
+                <a href="local.html">
+                    <polygon opacity="0.3" points="89,63 207,63 207,100 89,100"></polygon>
+                </a>
+    
+                <a href="info.html">
+                    <polygon opacity="0.3" points="145,100 235,100 235,115 145,115"></polygon>
+                </a>
+            </svg>
+            
+            <br>
+
+            <svg width="100%" heigth="100">
+                <rect width="100%" height="100%" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+                <text text-anchor="middle" dominant-baseline="middle" x="25%" y="50%" fill="white"><a href="index.html">Introdução</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.1s"></animate>
+                </text>
+                <text text-anchor="middle" dominant-baseline="middle" x="35%" y="50%" fill="white"><a href="local.html">Localização</a>
+                    <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.2s"></animate>
+                </text>
+                <text text-anchor="middle" dominant-baseline="middle" x="45%" y="50%" fill="white"><a href="multimedia.html">Multimédia</a>
+                    <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.3s"></animate>
+                </text>
+                <text text-anchor="middle" dominant-baseline="middle" x="55%" y="50%" fill="white"><a href="info.html">Informações</a>
+                    <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.4s"></animate>
+                </text>
+                <text text-anchor="middle" dominant-baseline="middle" x="65%" y="50%" fill="white"><a href="quizz.html">Quizz</a>
+                    <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.5s"></animate>
+                </text>
+                <text text-anchor="middle" dominant-baseline="middle" x="75%" y="50%" fill="white"><a href="../index.html">Home</a>
+                    <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.6s"></animate>
+                </text>
+            </svg>
+
         </form> 
     </body>
 </html>
