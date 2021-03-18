@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Guilherme Saturno">
+        <meta name="keywords" content="Kyoto">
+        <meta name="description" content="Website sobre Kyoto">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <body style="background-color:snow"></body>
+        <title>Kyoto</title>
+    </head>
+    <body>
+        <header>
+            <h1>Kyoto</h1>
+            <figure>
+                <img src="img/kyoto1.jpg" width="300" alt="Kyoto">
+            </figure>
+        </header>
+        
+        <hr>
+        <nav>
+            <a href="index.html">Introdução</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informações</a>
+            <b><a href="quizz.html">Quizz</a></b>
+            <a href="comentarios.html">Comentários</a>
+            <a href="../index.html">Home</a>
+        </nav>
+        <hr>
+
+        <section>
+            <h3>Quizz</h3>
+            
+            <p>
+                <form method="POST" action="mailto: nome@gmail.com">
+                    <fieldset style="width: 20%;">
+                        <legend><b>Identificação:</b></legend>
+                        <label for="fname">Nome:</label><br>
+                        <input type="text" id="nome" value="Nome" autocomplete="on" maxlength="25" size="25" form="Identificação" autofocus required><br><br>
+        
+                        <label for="fname">Apelido:</label><br>
+                        <input type="text" id="apelido" value="Apelido" autocomplete="on" maxlength="25" size="25" form="Identificação" autofocus required><br><br>
+        
+                        <label for="fname">Email:</label><br>
+                        <input type="text" id="email" placeholder="email@exemplo.com" autocomplete="on" maxlength="40" size="40" form="Identificação" autofocus required><br><br>
+                    </fieldset>
+        
+                    <fieldset style="width: 20%;">
+                        <legend><b>Quizz:</b></legend>
+                        <label for="fname">Qual população estimada de Kyoto em 2015?</label><br>
+        
+                        
+                        <input type="radio" id="pergunta1_1" name="pergunta1" form="Quizz">
+                        <label for="pergunta1_1">1,837 milhões</label><br>
+        
+                        <input type="radio" id="pergunta1_2" name="pergunta1" form="Quizz">
+                        <label for="pergunta1_2">1,475 milhões</label><br>
+        
+                        <input type="radio" id="pergunta1_3" name="pergunta1" form="Quizz">
+                        <label for="pergunta1_3">2,159 milhões</label><br>
+        
+                        <input type="radio" id="pergunta1_4" name="pergunta1" form="Quizz">
+                        <label for="pergunta1_4">1,383 milhões</label><br>
+                        <br>
+        
+                        <label for="fname">Selecione os pontos túristicos de Kyoto:</label><br>
+                        
+                        <input type="checkbox" id="pergunta2_1" form="Quizz">
+                        <label for="pergunta2_1">Torii Gates</label><br>
+        
+                        <input type="checkbox" id="pergunta2_2" form="Quizz">
+                        <label for="pergunta2_2">Kodai-ji Temple</label><br>
+        
+                        <input type="checkbox" id="pergunta2_3" form="Quizz">
+                        <label for="pergunta2_3">Akihabara</label><br>
+        
+                        <input type="checkbox" id="pergunta2_4" form="Quizz">
+                        <label for="pergunta2_4">Meiji Shrine</label><br>
+                        <br>
+        
+                        <label for="date">Em que data foi assinado o tratado de Kyoto?</label><br>
+                        <input type="date" id="pergunta3" form="Quizz"><br><br>
+        
+                        <label for="image">Onde a cidade de Kyoto está localizada?</label><br>
+                        <input type="image" id="pergunta4" src="img/japanMap.jpg" width="300" onclick="return false" form="Quizz"><br><br>
+        
+                        <label for="color">Qual a cor da bandeira de Kyoto?</label><br>
+                        <input type="color" id="pergunta5" form="Quizz"><br><br>
+        
+                        <label for="number">Qual a densidade populacional de Kyoto?</label><br>
+                        <input type="number" id="pergunta6" value="0" form="Quizz" step="2"><br><br>
+        
+                        <label for="range">Aproximadamente, qual é o ponto mais alto de Kyoto? (Entre 0m e 2000)</label><br>
+                        <input type="range" id="pergunta7" min="0" max="2000" form="Quizz"  name="rate" value="0" oninput="thisRate.value = rate.value">
+                        <output name="thisRate" for="rate">0</output><span>m</span>
+        
+                        <br><br>
+                        
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form> 
+            </p>
+        </section>
+
+        <svg width="100%" heigth="100">
+            <rect width="100%" height="100%" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="20%" y="50%" fill="white"><a href="index.html">Introdução</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.1s"></animate>
+            </text>
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="30%" y="50%" fill="white"><a href="local.html">Localização</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.2s"></animate>
+            </text>
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="40%" y="50%" fill="white"><a href="multimedia.html">Multimédia</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.3s"></animate>
+            </text>
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" fill="white"><a href="info.html">Informações</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.4s"></animate>
+            </text>
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="60%" y="50%" fill="white"><a href="quizz.html">Quizz</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.5s"></animate>
+            </text>
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="70%" y="50%" fill="white"><a href="comentarios.html">Comentários</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.6s"></animate>
+            </text>
+    
+            <text text-anchor="middle" dominant-baseline="middle" x="80%" y="50%" fill="white"><a href="../index.html">Home</a>
+                <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.6s"></animate>
+            </text>
+        </svg>
+
+        <footer>Guilherme Saturno - a21700118 - Universidade Lusófona de Humanidades de Tecnologias - 3° ano</footer>
+    </body>
+</html>
