@@ -6,7 +6,8 @@
         <meta name="keywords" content="Kyoto">
         <meta name="description" content="Website sobre Kyoto">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-        <body style="background-color:snow"></body>
+        <link rel="stylesheet" href="estilos.css"/>
+
         <title>Kyoto</title>
     </head>
     <body>
@@ -25,6 +26,7 @@
             <a href="info.html">Informações</a>
             <a href="quizz.html">Quizz</a>
             <a href="comentarios.html">Comentários</a>
+            <a href="html5-css.html">HTML5/CSS</a>
             <a href="../index.html">Home</a>
         </nav>
         <hr>
@@ -40,20 +42,20 @@
             </p>
     
             <figure>
-                <a href="img/kyotoMultimedia1_grande.jpg" target="foto"> <img src="img/kyotoMultimedia1_pequena.jpg" alt="Torii Gates at Fushimi Inari Shrine"></a>
+                <a href="img/kyotoMultimedia1_grande.jpg" target="framedFoto"> <img src="img/kyotoMultimedia1_pequena.jpg" alt="Torii Gates at Fushimi Inari Shrine"></a>
                 <figcaption>Torii Gates at Fushimi Inari Shrine</figcaption>
-                <a href="img/kyotoMultimedia2_grande.jpg" target="foto"><img src="img/kyotoMultimedia2_pequena.jpg" alt="Kodai-ji Temple"></a>
+                <a href="img/kyotoMultimedia2_grande.jpg" target="framedFoto"><img src="img/kyotoMultimedia2_pequena.jpg" alt="Kodai-ji Temple"></a>
                 <figcaption>Kodai-ji Temple</figcaption>
             </figure>
     
-            <iframe src="" width="800" height="533" frameBorder="0" name="foto"></iframe>
+            <iframe name="framedFoto" src="" width="800" height="533" frameBorder="0"></iframe>
             <legend><a href="https://www.neverendingvoyage.com/things-to-do-in-kyoto-japan/" target="_blank">Images source</a></legend>
         </section>
         
         <section>
             <h3>O que visitar?</h3>
             <p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3gX-umzVl9s" frameborder="0" 
+                <iframe name="framedFoto" width="560" height="315" src="https://www.youtube.com/embed/3gX-umzVl9s" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
         </section>
@@ -61,12 +63,10 @@
         <section>
             <h2 style="text-align:center;">Even in Kyoto...</h2>
             <h3 style="text-align:center;">Basho</h3>
-            <p style="text-align:center;">
-                <i>
+            <p class="poem" style="text-align:center;">
                 Even in Kyoto—<br>
                 Hearing the cuckoo's cry—<br>
                 I long for Kyoto.
-                </i>
             </p>
         </section>
 
@@ -74,7 +74,7 @@
             <h3>SVGs</h3>
             
             <p>
-                <svg width="350" heigth="350">
+                <svg id="svg animated" width="350" heigth="350">
                     <rect width="20" height="300" x="50" y="0" style="fill:rgb(255, 0, 55);stroke-width:3;stroke:rgb(0,0,0)">
                         <animate attributeName="width" values="20;15;20" dur="2s" repeatCount="indefinite"></animate>
                         <animate attributeName="height" values="300;295;300" dur="2s" repeatCount="indefinite"></animate>
@@ -92,15 +92,22 @@
             </p>
             
             <p>
-                <svg width="300"  height="300">
+                <svg id="kyoto kanji" width="300"  height="300">
                     <image width="100%" heigth="100%" href="img/kyotoKanji.svg"></image>
                 </svg>
                 <legend>Kyoto's kanji</legend>
             </p>
-        </section> 
+        </section>
+
+        <section class="container">
+            <img src="img/kyotoMultimedia3.jpg" width="300" alt="Kyoto">
+            <div class="bottomleft">
+                <img src="img/kyotoMultimedia4.jpg" width="150" alt="Kyoto">
+            </div>
+        </section>
         
         <svg width="100%" heigth="100">
-            <rect width="100%" height="100%" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+            <rect width="100%" height="100%" style="fill: green;stroke-width:3;stroke:rgb(0,0,0)" />
     
             <text text-anchor="middle" dominant-baseline="middle" x="20%" y="50%" fill="white"><a href="index.html">Introdução</a>
                 <animate attributeName="font-size" values="15;20;15" dur="2s" repeatCount="indefinite" begin="0.1s"></animate>
